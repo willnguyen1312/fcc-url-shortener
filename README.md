@@ -1,6 +1,5 @@
-# Fcc-timestamp
+# Fcc-url-shortener
 
-### My solution to Freecodecamp challenge. The project is based off [Koa-boilerplate][koa-boilerplate-url] 
-
+### My solution to Freecodecamp challenge. The project is based off [Koa-boilerplate][koa-boilerplate-url]
 
 [koa-boilerplate-url]: https://github.com/dbalas/koalerplate
