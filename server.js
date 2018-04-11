@@ -6,6 +6,15 @@ const BodyParser = require("koa-bodyparser");
 const Helmet = require("koa-helmet");
 const respond = require("koa-respond");
 const compress = require("koa-compress");
+const mongoose = require("mongoose");
+
+// MONGOOSE CONNECT
+// ===========================================================================
+if (process.env.NODE_ENV === "production") {
+  mongoose.connect("mongodb://admin:admin@ds141889.mlab.com:41889/url");
+} else {
+  mongoose.connect("mongodb://localhost:27017/url");
+}
 
 const app = new Koa();
 const router = new Router();
